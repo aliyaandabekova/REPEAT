@@ -2,11 +2,11 @@ import abc
 
 class Furniture(abc.ABC):
 
-    @abc.abstractmethod
+    # @abc.abstractmethod
     def comfort(self):
         pass
 
-    @abc.abstractmethod
+    # @abc.abstractmethod
     def construction(self):
         pass
 
@@ -29,7 +29,8 @@ class Table(Furniture):
 
 chair1 = Chair()
 table1 = Table()
-
+print(chair1.__dict__)
+print(table1.__dict__)
 
 class Timer:
     import time
