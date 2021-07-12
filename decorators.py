@@ -1,27 +1,27 @@
 import time
 
-# def decorator(func):        #not right
-#     print('start')
-#     func()
-#     print('finish')
-#
-# @decorator
-# def f1():
-#     print('Send request!')
-#
-#
-#
-#
-#
-# def decorator(func):        # right
-#     print('start')
-#     return func
-#
-# @decorator
-# def f1():
-#     print('Send request!')
-#     print('finish')
-# f1 = f1()
+def decorator(func):        #not right
+    print('start')
+    func()
+    print('finish')
+
+@decorator
+def f1():
+    print('Send request!')
+
+
+
+
+
+def decorator(func):        # right
+    print('start')
+    return func
+
+@decorator
+def f1():
+    print('Send request!')
+    print('finish')
+f1 = f1()
 
 
 
